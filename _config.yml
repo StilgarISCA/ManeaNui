@@ -1,4 +1,6 @@
-name: Arcana
-description: Arcana template for Jekyll
+lang: en-US
+title: Manea Nui Exotic Fruit Plantation
+url: #https://www.yakhair.com
+baseurl: #https://www.yakhair.com #No trailing slash!
+description: Manea Nui is a tropical fruit plantation -- for sale -- located in the Cook Islands.
 paginate: 10
-baseurl: ''
