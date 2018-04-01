@@ -33,6 +33,7 @@
 						<ul>
 							{% assign current = page.url | downcase | split: '/' %}
 							<li {% if current[1] == 'index.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/index.html">Home</a></li>
+                            <li {% if current[1] == 'property.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/property.html">The Property</a></li>
 							<li {% if current[1] == 'orchard.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/orchard.html">The Orchard</a></li>
 							<li {% if current[1] == 'roi.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/roi.html">Return On Investment</a></li>
 							<li {% if current[1] == 'slideshow.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/slideshow.html">Photo Tour</a></li>
