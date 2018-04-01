@@ -45,6 +45,10 @@
 		padding-left: 7em;
 	}
 
+.box.highlight div.header {
+    text-align: left;
+}
+
 		.box.highlight i {
 			position: absolute;
 			margin: 0;
