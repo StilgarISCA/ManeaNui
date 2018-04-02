@@ -28,11 +28,17 @@
 
 		<!-- Header -->
 			<div id="header">
+                {% assign current = page.url | downcase | split: '/' %}
+
+                <!-- For Sale -->
+                {% if current[1] != null and current[1] != 'index.html' %}
+                <h1><em>Manea Nui Plantation is</em> For Sale <input type="button" value="Learn More" onclick="parent.location='{{site.baseurl}}/index.html'"/></h1>
+                {% endif %}
+
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							{% assign current = page.url | downcase | split: '/' %}
-							<li {% if current[1] == 'index.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/index.html">Home</a></li>
+							<li {% if current[1] == 'index.html' or current[1] == null %}class="current"{% endif %}><a href="{{ site.baseurl }}/index.html">Home</a></li>
                             <li {% if current[1] == 'property.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/property.html">The Property</a></li>
 							<li {% if current[1] == 'orchard.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/orchard.html">The Orchard</a></li>
 							<li {% if current[1] == 'roi.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/roi.html">Return On Investment</a></li>
